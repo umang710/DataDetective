@@ -357,4 +357,6 @@ def download_dataset(level):
 
 # ------------------- MAIN ------------------- #
 if __name__ == "__main__":
-    app.run(debug=True)
+    from flask_cors import CORS
+    CORS(app, resources={r"/*": {"origins": "*"}})
+    app.run(host="0.0.0.0", port=5000)
