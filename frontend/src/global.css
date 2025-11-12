@@ -1,0 +1,137 @@
+/* ===== Global Style Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Base Layout ===== */
+body {
+  background-color: #0d1117;
+  color: #e5e7eb;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Common Elements ===== */
+h1, h2, h3, h4 {
+  color: #00b4d8;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+button {
+  background: #00b4d8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0096c7;
+  transform: translateY(-2px);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #1e293b;
+  background: #161b22;
+  color: #e5e7eb;
+  border-radius: 8px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #00b4d8;
+  box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.2);
+}
+
+/* ===== Table Styling ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #161b22;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+th, td {
+  border: 1px solid #1f2937;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #1e293b;
+  color: #00b4d8;
+  font-weight: 600;
+}
+
+td {
+  color: #f1f5f9;
+}
+
+tr:nth-child(even) {
+  background: #111827;
+}
+
+tr:hover {
+  background: rgba(0, 180, 216, 0.1);
+}
+
+/* ===== Container Classes ===== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ===== Alerts & Messages ===== */
+.message {
+  text-align: center;
+  color: #00b4d8;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.error {
+  color: #ef4444;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* ===== Page-specific tweaks ===== */
+.start-page, .level-page, .results-page, .admin-page {
+  padding: 2rem;
+  background: #0d1117;
+  min-height: 100vh;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.riddle-text {
+  font-family: 'Courier Prime', monospace;
+  font-size: 1.2rem;
+  color: #e5e7eb;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
