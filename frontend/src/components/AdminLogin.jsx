@@ -1,3 +1,4 @@
+console.log("API BASE IS:", import.meta.env.VITE_API_BASE);
 import { useState } from "react";
 
 function AdminLogin() {
