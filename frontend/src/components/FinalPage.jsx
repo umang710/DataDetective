@@ -22,7 +22,7 @@ function FinalPage() {
       a1.trim().toLowerCase() === correct1 &&
       a2.trim().toLowerCase() === correct2
     ) {
-      await fetch("http://localhost:5000/submit-final", {
+      await fetch(`${import.meta.env.VITE_API_BASE}/submit-final`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
